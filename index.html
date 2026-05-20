@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <title>Resume - Jana Krajícová</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #2c3e50;
+        }
+        .resume-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+        }
+        .header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 26pt;
+            font-weight: bold;
+            color: #1a2a3a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0 0 4px 0;
+        }
+        .title {
+            font-size: 13pt;
+            color: #7f8c8d;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0 0 12px 0;
+        }
+        .contact-table {
+            width: 100%;
+            margin-top: 5px;
+            font-size: 9.5pt;
+        }
+        .contact-table td {
+            padding: 2px 0;
+            color: #34495e;
+        }
+        .section-title {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #1a2a3a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-left: 4px solid #2c3e50;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            page-break-after: avoid;
+        }
+        .profile-text {
+            text-align: justify;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        .skills-table td {
+            padding: 6px 0;
+            vertical-align: top;
+        }
+        .skills-category {
+            font-weight: bold;
+            width: 28%;
+            color: #2c3e50;
+        }
+        .skills-list {
+            width: 72%;
+            color: #4f5f6f;
+        }
+        .project-item, .exp-item {
+            margin-bottom: 16px;
+            page-break-inside: avoid;
+        }
+        .item-table {
+            width: 100%;
+            margin-bottom: 4px;
+        }
+        .item-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .item-meta {
+            text-align: right;
+            font-weight: normal;
+            color: #7f8c8d;
+            font-size: 10pt;
+        }
+        .item-sub {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 6px;
+            font-size: 10pt;
+        }
+        ul {
+            margin: 4px 0 0 0;
+            padding-left: 20px;
+            color: #4f5f6f;
+        }
+        li {
+            margin-bottom: 4px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .grid-2 {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+        .grid-2 td {
+            width: 50%;
+            vertical-align: top;
+            padding-right: 15px;
+            font-size: 10pt;
+            color: #2c3e50;
+            line-height: 1.5;
+        }
+        @media (max-width: 840px) {
+            .resume-container {
+                margin: 10px;
+                padding: 20px;
+            }
+            .skills-category, .skills-list {
+                display: block;
+                width: 100%;
+            }
+            .skills-category {
+                margin-top: 8px;
+            }
+            .item-meta {
+                text-align: left;
+                display: block;
+                margin-top: 2px;
+            }
+        }
+        @media print {
+            html, body {
+                background-color: #ffffff;
+                font-size: 10pt;
+            }
+            .resume-container {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                max-width: 100%;
+                background-color: transparent;
+            }
+            @page {
+                size: A4;
+                margin: 15mm 15mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+
+        <div class="header">
+            <h1 class="name">Jana Krajícová</h1>
+            <div class="title">Software Engineering Student | C & Linux Developer</div>
+            
+            <table class="contact-table">
+                <tr>
+                    <td style="width: 50%;"><strong>Email:</strong> jana_krj@yahoo.com</td>
+                    <td style="width: 50%; text-align: right;"><strong>GitHub:</strong> github.com/jakrajta</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section-title">Professional Summary</div>
+        <div class="profile-text">
+            Technology-driven software engineering student at 42 Prague with a solid foundation in low-level C programming, Unix/Linux system administration, and manual memory management. Combines deep technical curiosity in system logic with a strong interest in cybersecurity, software reliability, automation, and infrastructure hardening. Leveraging a senior corporate and international background to bring exceptional precision, robust analytical troubleshooting, and strict engineering discipline to complex technical challenges. Eager to contribute to software development, systems integration, or security engineering within a dynamic environment.
+        </div>
+
+        <div class="section-title">Technical Skills & Tools</div>
+        <table class="skills-table">
+            <tr>
+                <td class="skills-category">Programming</td>
+                <td class="skills-list">C (low-level logic, manual memory management), Python, Bash / Shell scripting</td>
+            </tr>
+            <tr>
+                <td class="skills-category">Systems & Infrastructure</td>
+                <td class="skills-list">Linux/Unix (CLI, process management, development environments), Network Protocols, SSH, Makefile</td>
+            </tr>
+            <tr>
+                <td class="skills-category">Security & DevOps</td>
+                <td class="skills-list">System hardening, full disk encryption (LUKS/LVM), UFW Firewall, Docker, Docker Compose, Version Control (Git)</td>
+            </tr>
+            <tr>
+                <td class="skills-category">Analysis & Debugging</td>
+                <td class="skills-list">Systematic troubleshooting, GDB, Valgrind, technical code reviews, edge-case testing, datasheet & documentation analysis</td>
+            </tr>
+            <tr>
+                <td class="skills-category">Data & AI (Conceptual)</td>
+                <td class="skills-list">SQL (relational databases), theoretical understanding of Machine Learning architectures (Neural Networks, NLP, Decision Trees), Prompt Engineering</td>
+            </tr>
+        </table>
+
+        <div class="section-title">Technical Education & Experience (42 Prague)</div>
+        
+        <div class="exp-item">
+            <table class="item-table">
+                <tr>
+                    <td class="item-title">Student & Developer – <em>42 Prague</em></td>
+                    <td class="item-meta">05/2025 – Present</td>
+                </tr>
+            </table>
+            <div class="item-sub">Peer-to-peer, project-driven computer science curriculum focused on advanced software architecture and low-level development.</div>
+            <ul>
+                <li><strong>Low-Level Engineering:</strong> Developing core logic in C, performing manual memory allocation, implementing custom data structures, and mastering underlying system mechanics.</li>
+                <li><strong>Linux Environment:</strong> Working strictly within the command-line interface (CLI) daily, automating workflows via shell scripting, and configuring custom environments.</li>
+                <li><strong>Engineering Discipline:</strong> Actively conducting rigorous technical code reviews for peers, systematic troubleshooting, and engineering code designed to survive extreme stress testing.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Key Technical Projects</div>
+        
+        <div class="project-item">
+            <table class="item-table">
+                <tr>
+                    <td class="item-title">Minishell – <em>Custom Command-Line Interpreter in C</em></td>
+                    <td class="item-meta">42 Prague</td>
+                </tr>
+            </table>
+            <ul>
+                <li><strong>System-Level Implementation:</strong> Built a functional command interpreter simulating Bash behavior, managing system processes (<span style="font-family: monospace;">fork</span>, <span style="font-family: monospace;">execve</span>), pipes, and file redirections.</li>
+                <li><strong>Error Handling & Logic:</strong> Systematically debugged and resolved complex logical flows across multi-layered command pipelines.</li>
+                <li><strong>Memory Management & Quality:</strong> Enforced absolute software stability by utilizing Valgrind to track allocations and guarantee zero memory leaks or runtime failures.</li>
+                <li><strong>Resilience Testing:</strong> Designed robust edge-case testing suites to validate behavior against malformed inputs and unexpected runtime states.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <table class="item-table">
+                <tr>
+                    <td class="item-title">Born2beRoot – <em>System Administration & Infrastructure Hardening</em></td>
+                    <td class="item-meta">42 Prague</td>
+                </tr>
+            </table>
+            <ul>
+                <li><strong>Secure Server Deployment:</strong> Installed and configured a hardened Debian Linux server operating strictly through the command-line interface.</li>
+                <li><strong>Storage & Cryptography:</strong> Provisioned secure storage partitions via Logical Volume Management (LVM) combined with LUKS full-disk encryption.</li>
+                <li><strong>Access Control & Firewalling:</strong> Hardened remote administrative access via SSH key-pair authentication and isolated network traffic using UFW firewall.</li>
+                <li><strong>Automation & Compliance:</strong> Authored an automated system monitoring script in Bash executed via Cron tasks, while enforcing strict user privilege limits and password policies.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Specialized Certifications</div>
+        
+        <div class="exp-item">
+            <table class="item-table">
+                <tr>
+                    <td class="item-title">Intensive Python, Data Analysis & AI Program</td>
+                    <td class="item-meta">Bee IT Course</td>
+                </tr>
+            </table>
+            <div class="item-sub">Hands-on and theoretical curriculum covering data architecture and fundamental AI principles.</div>
+            <ul>
+                <li><strong>Technologies:</strong> Core Python (data manipulation frameworks), SQL relational database querying, and data analytics pipelines.</li>
+                <li><strong>Machine Learning Concepts:</strong> Conceptual understanding of Neural Networks (CNN, RNN), Natural Language Processing (NLP), Decision Trees, and model training methodologies.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <table class="item-table">
+                <tr>
+                    <td class="item-title">Linux & DevOps Certification</td>
+                    <td class="item-meta">Bee IT Course</td>
+                </tr>
+            </table>
+            <div class="item-sub">Infrastructure, deployment automation, and system operations training.</div>
+            <ul>
+                <li><strong>DevOps & Systems:</strong> Practical containerization using Docker, managing multi-container layouts via Docker Compose, network protocols, and environment automation.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">General Education</div>
+        <table class="grid-2">
+            <tr>
+                <td>
+                    <strong>VŠE / IAE de Lyon</strong><br>
+                    MBA (Le Master 2)
+                </td>
+                <td>
+                    <strong>Charles University (Univerzita Karlova)</strong><br>
+                    Master's Degree in Japanology (incl. Essentials of Law / Právní minimum)
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-title">Professional Experience</div>
+
+        <div class="exp-item">
+            <table class="item-table">
+                <tr>
+                    <td class="item-title">Expatriate HR Senior Coordinator</td>
+                    <td class="item-meta">2014 – 2024</td>
+                </tr>
+            </table>
+            <div class="item-sub">Toyota Tsusho Europe SA</div>
+            <ul>
+                <li>Managed sophisticated internal corporate logistics and administrative data requiring supreme attention to detail, strict compliance, and auditing.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <table class="item-table">
+                <tr>
+                    <td class="item-title">Consular Affairs Officer</td>
+                    <td class="item-meta">2011 – 2014</td>
+                </tr>
+            </table>
+            <div class="item-sub">Embassy of Japan in the Czech Republic</div>
+            <ul>
+                <li>Operated within high-security governmental structures, handling international administrative workflows under strict formal and ethical standards.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <table class="item-table">
+                <tr>
+                    <td class="item-title">Technical Interpreter & Translator (Japanese / Czech)</td>
+                    <td class="item-meta">Freelance</td>
+                </tr>
+            </table>
+            <div class="item-sub">Clients include: Koito, AGC Japan, TRAD, AISIN</div>
+            <ul>
+                <li>Analyzed, decoded, and translated complex technological blueprints, engineering documentations, and automotive technical requirements.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Languages</div>
+        <table style="width: 100%; font-size: 9.5pt; color: #2c3e50;">
+            <tr>
+                <td><strong>Czech:</strong> Native</td>
+                <td><strong>English:</strong> Professional</td>
+                <td><strong>Japanese:</strong> Professional</td>
+                <td><strong>French:</strong> Communicative</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
